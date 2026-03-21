@@ -2,7 +2,7 @@
 	import type { Project } from '../types/project.type';
 	import ProjectCard from './Card.svelte';
 	import { projects } from '../data/projects';
-	import PopUp from '../../../components/ui/PopUp.svelte';
+	import { Popup } from '../../../components/ui';
 
 	let previewMode = $state(false);
 	let projectToPreview = $state<Project | null>(null);
@@ -46,14 +46,14 @@
 			</div>
 		{/each}
 	</div>
-	<PopUp
+	<Popup
 		isOpen={previewMode}
 		onClose={() => {
 			previewMode = false;
 		}}
 	>
 		<ProjectCard project={projectToPreview!} />
-	</PopUp>
+	</Popup>
 </div>
 
 <style>

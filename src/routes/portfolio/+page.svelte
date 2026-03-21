@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AnimatedHeading from '../../components/ui/AnimatedHeading.svelte';
+	import { AnimatedHeading } from '../../components/ui';
 	import Projects from './_components/Projects.svelte';
 </script>
 
@@ -26,4 +26,3 @@
 		</div>
 	</section>
 </main>
-

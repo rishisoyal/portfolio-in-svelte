@@ -1,3 +1,3 @@
-export { useTheme } from './themeStore'
-export { useToast } from './toastStore'
-export { useCursor } from './cursorStore'
+export { customCursor, toggleCursor } from './cursorStore';
+export { setIsDark, toggleTheme, isDark } from './themeStore';
+export { hideToast, showToast, toast } from './toastStore';

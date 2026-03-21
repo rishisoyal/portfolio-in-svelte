@@ -1,15 +1,15 @@
 <script lang="ts">
-	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
-	import Header from '../components/ui/Header.svelte';
-	import AnimatedRoute from '../components/ui/AnimatedRoute.svelte';
 	import { page } from '$app/state';
-	import ThemeChangeButton from '../components/ui/ThemeChangeButton.svelte';
-	import { customCursor, toggleCursor } from '../store/cursorStore';
-	import { isDark, toggleTheme } from '../store/themeStore';
-	import CustomCursorToggleButton from '../components/ui/CustomCursorToggleButton.svelte';
-	import CustomCursor from '../components/ui/CustomCursor.svelte';
-	import Toast from '../components/ui/Toast.svelte';
+	import {
+		AnimatedRoute,
+		CustomCursor,
+		CustomCursorToggleButton,
+		Header,
+		ThemeChangeButton,
+		Toast
+	} from '../components/ui';
+	import { customCursor, isDark, toggleCursor, toggleTheme } from '../store';
+	import './layout.css';
 
 	let { children } = $props();
 	$effect.pre(() => {
@@ -29,8 +29,6 @@
 		if ((!theme && !$isDark) || (theme === 'light' && $isDark)) toggleTheme();
 	});
 </script>
-
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <Header />
 <Toast />

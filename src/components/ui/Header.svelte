@@ -36,13 +36,11 @@
 			<li class="relative flex place-content-center">
 				<a
 					href={resolve(page.path)}
-					class={`relative flex h-12 w-12 cursor-pointer items-center justify-center gap-4 rounded-full sm:h-13 sm:w-13 sm:p-3 custom-cursor:cursor-none
-    ${
-			pathName === page.path ? 'bg-[#7287fd] dark:bg-[#5160b2]' : 'bg-[#eff1f5] dark:bg-[#45475A]'
-		}`}
+					class={`header-link relative flex h-12 w-12 cursor-pointer items-center justify-center gap-4 rounded-full sm:h-13 sm:w-13 sm:p-3 custom-cursor:cursor-none
+    ${pathName === page.path ? 'bg-[#5160b2]' : 'bg-[#eff1f5] dark:bg-[#45475A]'}`}
 				>
 					<h2
-						class="pointer-events-none absolute right-[20%] -z-9 hidden h-full w-30 items-center justify-center rounded-l-full rounded-r-2xl bg-[#7287fd] font-bold opacity-0 lg:flex dark:bg-[#5160b2]"
+						class="pointer-events-none absolute right-[20%] -z-9 hidden h-full w-30 items-center justify-center rounded-l-full rounded-r-2xl bg-[#5160b2] font-bold opacity-0 lg:flex"
 					>
 						{page.name}
 					</h2>
@@ -55,12 +53,7 @@
 </header>
 
 <style>
-	header ul li a:hover h2 {
-		opacity: 1;
-		right: 30px;
-	}
-
-	header ul li a h2 {
+	.header-link h2 {
 		height: 100%;
 		margin: 0;
 		text-align: center;
@@ -68,19 +61,17 @@
 		transition: all 0.3s;
 	}
 
-	header ul li a {
+	.header-link:hover h2 {
+		opacity: 1;
+		right: 30px;
+		pointer-events: all;
+	}
+
+	.header-link {
 		transition: all 0.3s;
 	}
 
-	:global(html.dark header ul li a:hover) {
+	.header-link:hover {
 		background-color: #5160b2;
-	}
-
-	header ul li a:hover {
-		background-color: #7287fd;
-	}
-
-	header ul li a:hover h2 {
-		pointer-events: all;
 	}
 </style>

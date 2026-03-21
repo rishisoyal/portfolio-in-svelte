@@ -1,10 +1,8 @@
-<script>
-	import AnimatedButton  from "../components/ui/AnimatedButton.svelte";
-	import { goto } from "$app/navigation";
-	import {resolve } from '$app/paths';
+<script lang="ts">
+	import { AnimatedButton } from '../components/ui';
+	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 </script>
-<!-- <script lang="ts">
-</script> -->
 
 <title>Rishi Soyal - Home</title>
 
@@ -12,8 +10,8 @@
 	class="width-transition relative mb-14 flex min-h-screen w-full items-center justify-center overflow-hidden lg:mb-0"
 >
 	<div
-		id="slide-1"
-		class="absolute -top-1/2 -z-9 hidden h-[200%] w-full -rotate-15 bg-[#8caaee] transition-colors duration-300 lg:block dark:bg-[#1e1e2e]"
+		id="slide"
+		class="absolute -top-1/2 -z-9 hidden h-[200%] w-full -rotate-15 transition-colors duration-300 lg:block bg-[#5160b2]"
 	></div>
 	<div
 		class="animation-slide-in-up flex w-full flex-col items-center justify-between gap-6 p-8 lg:flex-row"
@@ -47,39 +45,28 @@
 				</div>
 				<div class="flex w-full items-center justify-center px-4 py-4 lg:justify-start">
 					<AnimatedButton
-                  content="MORE ABOUT ME"
-                  icon='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>'
-                  onClick={() => {
-                    goto(resolve("/about"));
-                  }}
-                />
+						content="MORE ABOUT ME"
+						icon={`<svg xmlns="
+						http:
+						//www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>`}
+						onClick={() => {
+							goto(resolve('/about'));
+						}}
+					/>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div
-		id="slide-2"
-		class="absolute -bottom-1/2 -z-1 hidden h-[200%] w-full -rotate-15 bg-[#8caaee] transition-colors duration-300 lg:block dark:bg-[#1e1e2e]"
-	></div>
 </main>
 
 <style>
-	#slide-1 {
+	#slide {
 		transform: translateX(-100%);
 		animation: slideIn 0.5s ease-out forwards;
 	}
 	@keyframes slideIn {
 		to {
 			transform: translateX(-73%);
-		}
-	}
-	#slide-2 {
-		transform: translateX(100%);
-		animation: slideIn2 0.5s ease-out forwards;
-	}
-	@keyframes slideIn2 {
-		to {
-			transform: translateX(73%);
 		}
 	}
 </style>

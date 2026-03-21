@@ -7,13 +7,11 @@
 		warning: { bgColor: '', borderColor: '' },
 		info: { bgColor: '', borderColor: '' }
 	};
-
-	setTimeout(hideToast, $toast.duration);
 </script>
 
 {#if $toast.open}
 	<div
-		class="animation-slide-in-right fixed top-12 right-0 z-999 m-2 flex w-max items-center justify-end gap-4 rounded-xs border-2 p-4"
+		class="animation-fade-in-right fixed top-12 right-0 z-999 m-2 flex w-max items-center justify-end gap-4 rounded-xl border-2 p-4"
 		style={`
             background-color: ${severityColor[$toast.severity].bgColor};
             border-color: ${severityColor[$toast.severity].borderColor};

@@ -32,7 +32,6 @@
 			in:scale={{
 				opacity: 0,
 				start: 0.9,
-				duration: 700
 			}}
 			out:scale={{ opacity: 0, start: 0.9 }}
 		>

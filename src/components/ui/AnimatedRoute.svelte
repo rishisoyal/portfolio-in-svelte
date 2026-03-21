@@ -6,7 +6,6 @@
 <style>
 	#shutter {
 		animation: slide-up 0.7s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 forwards;
-		transform: translateY(0%);
 	}
 
 	@keyframes slide-up {

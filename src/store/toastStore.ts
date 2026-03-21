@@ -16,13 +16,20 @@ export const toast = writable<State>({
 	duration: 3000
 });
 
-export function showToast(message: string, severity: Severity, duration: number = 3000) {
+let timeoutId: ReturnType<typeof setTimeout> | null = null;
+export function showToast(message: string, severity: Severity, duration: number = 6000) {
 	toast.set({
 		message,
 		severity,
 		duration,
 		open: true
 	});
+
+	if (timeoutId) clearTimeout(timeoutId);
+	timeoutId = setTimeout(() => {
+		hideToast();
+	}, duration);
+	// setTimeout(hideToast, duration);
 }
 
 export function hideToast() {

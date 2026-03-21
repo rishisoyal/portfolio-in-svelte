@@ -1,8 +1,6 @@
 <script lang="ts">
-	import AnimatedHeading from '../../components/ui/AnimatedHeading.svelte';
-	import ExperienceEducation from './_components/ExperienceEducation.svelte';
-	import ResumeDownloadButton from './_components/ResumeDownloadButton.svelte';
-	import Skills from './_components/Skills.svelte';
+	import { AnimatedHeading } from '../../components/ui';
+	import { ExperienceEducation, ResumeDownloadButton, Skills } from './_components';
 </script>
 
 <title>Rishi Soyal - About</title>
@@ -88,9 +86,7 @@
 								<span class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]">
 									Phone:
 								</span>
-								<a href="tel:+91 6367830221" class="custom-cursor:cursor-none">
-									+91 6367830221
-								</a>
+								<a href="tel:+91 6367830221" class="custom-cursor:cursor-none"> +91 6367830221 </a>
 							</div>
 							<div
 								class="flex flex-col
@@ -164,9 +160,7 @@
 					<span>
 						<span class="text-2xl font-bold text-[#5160b2]">10+</span>
 						<br />
-						<span class="max-w-4 dark:text-gray-300">
-							(React, Next.js, Node, MongoDB, etc.)
-						</span>
+						<span class="max-w-4 dark:text-gray-300"> (React, Next.js, Node, MongoDB, etc.) </span>
 					</span>
 				</div>
 				<div

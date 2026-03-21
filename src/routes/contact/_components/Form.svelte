@@ -2,7 +2,7 @@
 	import { z } from 'zod';
 	import type { ContactForm } from '../types';
 	import ToolTipWrapper from './ToolTipWrapper.svelte';
-	import { showToast } from '../../../store/toastStore';
+	import { showToast } from '../../../store';
 
 	type FormErrors = Partial<Record<keyof ContactForm, string>>;
 
@@ -154,7 +154,7 @@
 			>
 				<span class="font-semibold">SEND MESSAGE</span>
 				<span
-					class={`absolute right-0 flex h-14 w-14 items-center justify-center rounded-full bg-[#7287fd] text-xl dark:bg-[#5160b2] ${loading && 'animate-spin'}`}
+					class={`absolute right-0 flex h-14 w-14 items-center justify-center rounded-full text-xl bg-[#5160b2] ${loading && 'animate-spin'}`}
 				>
 					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"
 						><path

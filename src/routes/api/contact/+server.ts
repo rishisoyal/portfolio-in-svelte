@@ -1,14 +1,14 @@
 import { Resend } from 'resend';
 import type { RequestHandler } from './$types';
-import { RESEND_API_KEY , TO_EMAIL} from '$env/static/private';
+import { RESEND_API_KEY, TO_EMAIL } from '$env/static/private';
 
-interface RequestBody {
+type RequestBody = {
 	name: string;
 	email: string;
 	subject: string;
 	message: string;
 	company: string | null;
-}
+};
 
 const resend = new Resend(RESEND_API_KEY);
 

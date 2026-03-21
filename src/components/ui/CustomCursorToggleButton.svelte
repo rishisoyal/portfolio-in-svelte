@@ -5,7 +5,7 @@
 <div>
 	<button
 		id="cursor-toggle-btn"
-		class="grid cursor-pointer place-content-center rounded-full bg-gray-300 p-2 transition-all duration-300 hover:bg-[#7287fd] dark:bg-[#313244] dark:hover:bg-[#5160b2] custom-cursor:cursor-none"
+		class="grid cursor-pointer place-content-center rounded-full bg-gray-300 p-2 transition-all duration-300 dark:bg-[#313244] hover:bg-[#5160b2] custom-cursor:cursor-none"
 		onclick={toggleCursor}
 		title={$customCursor ? 'Disable Custom Cursor' : 'Enable Custom Cursor'}
 	>

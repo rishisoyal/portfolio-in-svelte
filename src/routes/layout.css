@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant custom-cursor (.custom-cursor &);
 
@@ -13,283 +13,278 @@
 /* Custom scrollbar */
 /* Scrollbar size */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 8px;
+	width: 6px;
+	height: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 10px;
+	background: transparent;
+	border-radius: 10px;
 }
 
 /* Thumb (dark/default) */
 ::-webkit-scrollbar-thumb {
-  background: #6c7086;
-  border-radius: 10px;
+	background: #6c7086;
+	border-radius: 10px;
 }
 
 /* Dark mode thumb */
 html.dark ::-webkit-scrollbar-thumb {
-  background: rgb(53, 53, 53);
+	background: rgb(53, 53, 53);
 }
 
 /* Hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #677eff;
+	background: #677eff;
 }
 
 /* Dark mode hover */
 html.dark ::-webkit-scrollbar-thumb:hover {
-  background: #5160b2;
+	background: #5160b2;
 }
 
 /* Corner */
 ::-webkit-scrollbar-corner {
-  background: #181825;
+	background: #181825;
 }
 
 * {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 ::selection {
-  background-color: #5160b2;
-  color: whitesmoke;
+	background-color: #5160b2;
+	color: whitesmoke;
 }
 
 .width-transition {
-  transition: width 0.5s ease-in-out 1;
+	transition: width 0.5s ease-in-out 1;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 html {
-  color: black !important;
-  background-color: #dce0e8 !important;
-  transition: all 0.3s;
+	color: black !important;
+	background-color: #dce0e8 !important;
+	transition: all 0.3s;
 }
 
 html.dark {
-  color: white !important;
-  background-color: #11111b !important;
+	color: white !important;
+	background-color: #11111b !important;
 }
 
 .primary-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
-  padding: 1rem;
-  overflow: hidden;
-  /* margin-top: 16px; */
-  position: relative;
-  background: transparent;
-  width: 15rem;
-  border: 2px solid #5160b2;
-  transition: all 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.3rem;
+	padding: 1rem;
+	overflow: hidden;
+	/* margin-top: 16px; */
+	position: relative;
+	background: transparent;
+	width: 15rem;
+	border: 2px solid #5160b2;
+	transition: all 0.5s;
 }
 
 .primary-btn span {
-  margin-left: -40px;
+	margin-left: -40px;
 }
 
 .primary-btn::before {
-  content: "";
-  width: 100%;
-  background-color: #7287fd;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  transform: translateX(100%);
-  transition: all 0.5s ease-out;
-}
-
-html.dark .primary-btn::before {
-  background-color: #5160b2;
-}
-
-html.dark .primary-btn {
-  border: 2px solid #5160b2;
+	content: '';
+	width: 100%;
+	background-color: #5160b2;
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	transform: translateX(100%);
+	transition: all 0.5s ease-out;
 }
 
 @media (min-width: 768px) {
-  .primary-btn:hover {
-    transform: translateX(12px);
-  }
+	.primary-btn:hover {
+		transform: translateX(12px);
+	}
 
-  .primary-btn:hover::before {
-    transform: translateX(0%);
-  }
+	.primary-btn:hover::before {
+		transform: translateX(0%);
+	}
 }
 
 @property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+	syntax: '<angle>';
+	initial-value: 0deg;
+	inherits: false;
 }
 
 #hero-img {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: max-content;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* width: max-content;
   height: max-content; */
-  border-radius: 30px;
+	border-radius: 30px;
 }
 
 #hero-img img {
-  border-radius: 30px;
+	border-radius: 30px;
 }
 
 @media (max-width: 1024px) {
-
-  #hero-img,
-  #hero-img img {
-    border-radius: 100%;
-  }
+	#hero-img,
+	#hero-img img {
+		border-radius: 100%;
+	}
 }
 
 #hero-img::before,
 #hero-img::after {
-  content: "";
-  display: flex;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  border-radius: inherit;
-  animation: border-spin 8s linear 0s infinite;
-  scale: 100.5%;
-  filter: blur(10px);
+	content: '';
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	border-radius: inherit;
+	animation: border-spin 8s linear 0s infinite;
+	scale: 100.5%;
+	filter: blur(10px);
 }
 
 #hero-img::after {
-  background: conic-gradient(from calc(var(--angle) + 100deg),
-      transparent 70%,
-      #5160b2,
-      transparent);
+	background: conic-gradient(
+		from calc(var(--angle) + 100deg),
+		transparent 70%,
+		#5160b2,
+		transparent
+	);
 }
 
 #hero-img::before {
-  background: conic-gradient(from calc(var(--angle) - 90deg),
-      transparent 70%,
-      #5160b2,
-      transparent);
+	background: conic-gradient(
+		from calc(var(--angle) - 90deg),
+		transparent 70%,
+		#5160b2,
+		transparent
+	);
 }
 
 @keyframes border-spin {
-  from {
-    --angle: 0deg;
-  }
+	from {
+		--angle: 0deg;
+	}
 
-  to {
-    --angle: 360deg;
-  }
+	to {
+		--angle: 360deg;
+	}
 }
 
 /* =================== Animation =================== */
 
 .animation-fade-in-left {
-  animation: fade-in-left 1s ease-out 0s 1;
+	animation: fade-in-left 1s ease-out 0s 1;
 }
 
 @keyframes fade-in-left {
-  from {
-    transform: translateX(-20px);
-    opacity: 0
-  }
+	from {
+		transform: translateX(-20px);
+		opacity: 0;
+	}
 
-  to {
-    transform: translateX(0);
-    opacity: 1
-  }
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 .animation-fade-in-right {
-  animation: fade-in-right 1s ease-out 0s 1;
+	animation: fade-in-right 1s ease-out 0s 1;
 }
 
 @keyframes fade-in-right {
-  from {
-    transform: translateX(20px);
-    opacity: 0
-  }
+	from {
+		transform: translateX(20px);
+		opacity: 0;
+	}
 
-  to {
-    transform: translateX(0);
-    opacity: 1
-  }
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 .animation-fade-in-up {
-  animation: fade-in-up .5s ease-in-out 0s 1 forwards;
+	animation: fade-in-up 0.5s ease-in-out 0s 1 forwards;
 }
 
 @keyframes fade-in-up {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-    filter: blur(2px);
-  }
-  
-  to {
-    transform: translateY(0);
-    opacity: 1;
-    filter: blur(0px);
-  }
+	from {
+		transform: translateY(20px);
+		opacity: 0;
+		filter: blur(2px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+		filter: blur(0px);
+	}
 }
 
 .animation-slide-in-up {
-  animation: slide-in-up .5s ease-in-out 0s 1;
+	animation: slide-in-up 0.5s ease-in-out 0s 1;
 }
 
 @keyframes slide-in-up {
-  from {
-    transform: translateY(20px);
-  }
+	from {
+		transform: translateY(20px);
+	}
 
-  to {
-    transform: translateY(0);
-  }
+	to {
+		transform: translateY(0);
+	}
 }
 
 /* used only in tooltip animation */
 .animation-fade-in-down {
-  animation: fade-in-down .5s ease-out 0s 1;
+	animation: fade-in-down 0.5s ease-out 0s 1;
 }
 
 @keyframes fade-in-down {
-  from {
-    transform: translateY(-20px);
-    opacity: 0
-  }
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
 
-  to {
-    transform: translateY(0);
-    opacity: 1
-  }
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .animation-zoom-in {
-  animation: zoom-in 1s ease-in-out 0s 1;
+	animation: zoom-in 1s ease-in-out 0s 1;
 }
 
 @keyframes zoom-in {
-  from {
-    transform: scale(0.5);
-  }
+	from {
+		transform: scale(0.5);
+	}
 
-  to {
-    transform: scale(1);
-  }
+	to {
+		transform: scale(1);
+	}
 }
 
 /* ===================================================== */
