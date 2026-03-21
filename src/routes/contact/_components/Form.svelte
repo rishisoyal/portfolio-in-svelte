@@ -150,7 +150,7 @@
 		>
 			<button
 				type="submit"
-				class="primary-btn cursor-pointer rounded-full before:rounded-full hover:text-white custom-cursor:cursor-none"
+				class="primary-btn cursor-pointer rounded-full before:rounded-full md:hover:text-white custom-cursor:cursor-none"
 			>
 				<span class="font-semibold">SEND MESSAGE</span>
 				<span

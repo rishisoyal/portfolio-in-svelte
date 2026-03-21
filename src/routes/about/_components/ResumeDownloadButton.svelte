@@ -17,11 +17,11 @@
 			// window.open("/Rishi Soyal - Resume.pdf");
 			linkRef.click();
 		}}
-		class="primary-btn mb-12 cursor-pointer rounded-full before:rounded-full lg:mb-0 custom-cursor:cursor-none hover:text-white"
+		class="primary-btn mb-12 cursor-pointer rounded-full before:rounded-full md:hover:text-white lg:mb-0 custom-cursor:cursor-none"
 	>
 		<span class="font-semibold">DOWNLOAD CV</span>
 		<span
-			class="absolute right-0 flex h-14 w-14 items-center justify-center rounded-full text-xl bg-[#5160b2] text-white"
+			class="absolute right-0 flex h-14 w-14 items-center justify-center rounded-full bg-[#5160b2] text-xl text-white"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
 				><path
