@@ -31,7 +31,7 @@
 			onclick={(e) => e.stopPropagation()}
 			in:scale={{
 				opacity: 0,
-				start: 0.9,
+				start: 0.9
 			}}
 			out:scale={{ opacity: 0, start: 0.9 }}
 		>
