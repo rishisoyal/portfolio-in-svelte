@@ -25,7 +25,7 @@
 				href={social.href}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="cursor-input grid place-content-center rounded-full bg-gray-300 p-3 transition-all duration-500 hover:-translate-y-1 dark:bg-[#313244] hover:bg-[#5160b2] hover:shadow-[0px_0px_30px_#5160b2] custom-cursor:cursor-none"
+				class="cursor-input grid place-content-center rounded-full bg-[#bcc0cc] p-3 transition-all duration-500 hover:-translate-y-1 dark:bg-[#313244] hover:bg-[#5160b2] hover:shadow-[0px_0px_30px_#5160b2] custom-cursor:cursor-none hover:text-white"
 				title={social.name}			>
 				{@html social.icon}
 			</a>

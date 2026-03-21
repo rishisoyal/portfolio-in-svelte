@@ -5,7 +5,7 @@
 <div>
 	<button
 		id="theme-btn"
-		class="grid cursor-pointer place-content-center rounded-full bg-gray-300 p-2 transition-all duration-500 dark:bg-[#313244] hover:bg-[#5160b2] custom-cursor:cursor-none"
+		class="grid cursor-pointer place-content-center rounded-full bg-[#bcc0cc] p-2 transition-all duration-500 dark:bg-[#313244] hover:bg-[#5160b2] custom-cursor:cursor-none hover:text-white dark:text-white text-gray-700"
 		onclick={toggleTheme}
 		title={$isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
 	>

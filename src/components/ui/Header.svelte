@@ -36,11 +36,11 @@
 			<li class="relative flex place-content-center">
 				<a
 					href={resolve(page.path)}
-					class={`header-link relative flex h-12 w-12 cursor-pointer items-center justify-center gap-4 rounded-full sm:h-13 sm:w-13 sm:p-3 custom-cursor:cursor-none
-    ${pathName === page.path ? 'bg-[#5160b2]' : 'bg-[#eff1f5] dark:bg-[#45475A]'}`}
+					class={`header-link relative flex h-12 w-12 cursor-pointer items-center justify-center gap-4 rounded-full sm:h-13 sm:w-13 sm:p-3 custom-cursor:cursor-none text-gray-700 dark:text-white hover:text-white
+    ${pathName === page.path ? 'bg-[#5160b2] text-white' : 'bg-[#bcc0cc] dark:bg-[#45475A]'}`}
 				>
 					<h2
-						class="pointer-events-none absolute right-[20%] -z-9 hidden h-full w-30 items-center justify-center rounded-l-full rounded-r-2xl bg-[#5160b2] font-bold opacity-0 lg:flex"
+						class="pointer-events-none text-white absolute right-[20%] -z-9 hidden h-full w-30 items-center justify-center rounded-l-full rounded-r-2xl bg-[#5160b2] font-bold opacity-0 lg:flex"
 					>
 						{page.name}
 					</h2>
