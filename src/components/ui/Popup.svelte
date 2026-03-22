@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { Component } from 'svelte';
+	import type { Snippet } from 'svelte';
 	import { blur, scale } from 'svelte/transition';
 
 	interface PopupProps {
 		isOpen: boolean;
 		onClose: () => void;
-		children: Component;
+		children: Snippet;
 	}
 
 	let { isOpen, onClose, children }: PopupProps = $props();

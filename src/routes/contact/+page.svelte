@@ -8,7 +8,7 @@
 <main class="mb-18 flex items-start justify-center pt-12 lg:mb-0">
 	<section class="flex w-full flex-col justify-center gap-8 p-3 sm:p-8">
 		<AnimatedHeading frontText={{ firstText: 'GET IN', secondText: 'TOUCH' }} backText="CONTACT" />
-		<div class="animation-fade-in-up w-full p-1 lg:p-12">
+		<div class="animation-slide-in-up w-full p-1 lg:p-12">
 			<div class="flex w-full flex-col items-start justify-center gap-14 lg:flex-row">
 				<!-- Left section -->
 				<div class="left flex w-full flex-col gap-8 lg:w-100 xl:w-160">

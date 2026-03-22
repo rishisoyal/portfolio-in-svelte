@@ -4,7 +4,6 @@
 
 <a
 	bind:this={linkRef}
-	// eslint-disable-next-line svelte/no-navigation-without-resolve
 	href="/Rishi Soyal - Resume.pdf"
 	target="_blank"
 	download={true}
@@ -14,7 +13,6 @@
 <div class="py-4">
 	<button
 		onclick={() => {
-			// window.open("/Rishi Soyal - Resume.pdf");
 			linkRef.click();
 		}}
 		class="primary-btn mb-12 cursor-pointer rounded-full before:rounded-full md:hover:text-white lg:mb-0 custom-cursor:cursor-none"

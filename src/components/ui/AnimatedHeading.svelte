@@ -7,7 +7,7 @@
 	let { frontText, backText }: AnimatedHeadingProps = $props();
 </script>
 
-<div class="flex h-24 w-full items-center justify-center">
+<div class="relative flex h-24 w-full items-center justify-center">
 	<div
 		class="animation-zoom-in absolute flex items-center justify-center text-center text-6xl font-bold opacity-15 sm:text-9xl"
 	>

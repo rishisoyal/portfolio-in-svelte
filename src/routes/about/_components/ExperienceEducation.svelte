@@ -49,7 +49,7 @@
 				</div>
 				<div class="flex flex-col gap-2">
 					<div
-						class="w-fit rounded-full bg-gray-400 px-3 py-1 text-sm dark:bg-gray-700 dark:text-gray-200"
+						class="w-fit rounded-full bg-[#bcc0cc] px-3 py-1 text-sm dark:bg-gray-700 dark:text-gray-200"
 					>
 						{data.duration}
 					</div>

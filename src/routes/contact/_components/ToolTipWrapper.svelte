@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { Component } from 'svelte';
+	import type { Snippet } from 'svelte';
 
 	type ToolTipWrapperProps = {
-		children: Component;
+		children: Snippet;
 		tooltip: string;
 		open: boolean;
 	};
