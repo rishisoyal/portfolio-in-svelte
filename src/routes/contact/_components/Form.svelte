@@ -68,7 +68,7 @@
 			if (!res.ok) {
 				showToast((await res.json()).error, 'error');
 			} else {
-				showToast((await res.json()).message, 'success');
+				showToast('Successfully sent your message', 'success');
 			}
 		} catch (error) {
 			showToast(error instanceof Error ? error.message : 'Some error occurred', 'error');

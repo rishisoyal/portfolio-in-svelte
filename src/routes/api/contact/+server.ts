@@ -1,4 +1,4 @@
-import { json } from '@sveltejs/kit'; // Use the SvelteKit helper
+import { json } from '@sveltejs/kit';
 import { Resend } from 'resend';
 import type { RequestHandler } from './$types';
 import { RESEND_API_KEY, TO_EMAIL } from '$env/static/private';
