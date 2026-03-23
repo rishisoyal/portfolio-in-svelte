@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { customCursor, toggleCursor } from '../../store/cursorStore';
+	import { customCursor, toggleCursor } from '../../store';
 </script>
 
 <div>

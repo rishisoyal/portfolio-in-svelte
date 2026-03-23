@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { isDark, toggleTheme } from '../../store/themeStore';
+	import { isDark, toggleTheme } from '../../store';
 </script>
 
 <div>

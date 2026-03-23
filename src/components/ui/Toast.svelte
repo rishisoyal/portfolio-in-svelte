@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { toast, hideToast } from '../../store/toastStore';
+	import { toast, hideToast } from '../../store';
 
 	const severityColor: Record<typeof $toast.severity, { bgColor: string; borderColor: string }> = {
 		error: { bgColor: '#d20f3982', borderColor: '#d20f39' },

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { customCursor, toggleCursor } from '../../store/cursorStore';
+	import { customCursor, toggleCursor } from '../../store';
 	let mouseX = $state(0);
 	let mouseY = $state(0);
 	let scale = $state(1);

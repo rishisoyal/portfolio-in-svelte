@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import {
-		AnimatedRoute,
 		CustomCursor,
 		CustomCursorToggleButton,
 		Header,
@@ -44,8 +43,12 @@
 	<CustomCursor />
 {/if}
 
+<!-- shutter -->
 {#key page.url.pathname}
-	<AnimatedRoute />
+	<div
+		class="fixed inset-0 z-99 min-h-screen w-full bg-[#ccd0da] dark:bg-[#1e1e2e]"
+		id="shutter"
+	></div>
 {/key}
 
 <div class="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
