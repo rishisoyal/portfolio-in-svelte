@@ -13,7 +13,7 @@ export const toast = writable<State>({
 	open: false,
 	severity: 'success',
 	message: '',
-	duration: 3000
+	duration: 6000
 });
 
 let timeoutId: ReturnType<typeof setTimeout> | null = null;

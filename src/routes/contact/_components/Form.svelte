@@ -2,7 +2,7 @@
 	import { z } from 'zod';
 	import type { ContactForm } from '../types';
 	import ToolTipWrapper from './ToolTipWrapper.svelte';
-	import { showToast } from '../../../store';
+	import { showToast, toast } from '../../../store';
 
 	type FormErrors = Partial<Record<keyof ContactForm, string>>;
 
@@ -62,7 +62,7 @@
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify(formData),
-				signal: AbortSignal.timeout(8000) // request timeout (8 sec)
+				signal: AbortSignal.timeout($toast.duration) // request timeout
 			});
 
 			if (!res.ok) {
