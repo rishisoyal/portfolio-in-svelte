@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { isDark } from '../../../store';
+	import { isDark } from "../../store";
 
 	const { level }: { level: number } = $props();
 	function angle(val: number) {

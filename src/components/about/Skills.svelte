@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { skills } from '../data/skills';
+	import { skills } from './data/skills';
 	import CircularProgressbar from './CircularProgressbar.svelte';
 
 	$effect(() => {
@@ -34,7 +34,7 @@
 				<CircularProgressbar level={skill.level} />
 			</div>
 			<div class="flex w-full items-center justify-center p-2 sm:p-4">
-				<h2 class="text-xl">{skill.name}</h2>
+				<h2 class="text-[18px] text-nowrap sm:text-xl">{skill.name}</h2>
 			</div>
 		</div>
 	{/each}

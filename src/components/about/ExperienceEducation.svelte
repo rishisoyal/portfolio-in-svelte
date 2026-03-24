@@ -1,5 +1,5 @@
 <script>
-	import { experienceAndEducation } from '../data/experienceAndEducation';
+	import { experienceAndEducation } from './data/experienceAndEducation';
 
 	$effect(() => {
 		const observer = new IntersectionObserver(

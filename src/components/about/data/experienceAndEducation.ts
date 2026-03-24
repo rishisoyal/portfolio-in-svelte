@@ -27,5 +27,14 @@ export const experienceAndEducation = [
       "Exploring scalable backend systems and performance optimization",
     ],
   },
+  {
+    duration: "2025(October) - 2026(March)",
+    title: "Internship - Full-Stack Web Development",
+    description: "Completed internship at Laxmaya Technologies in full-stack web development(MERN, NextJS, Svelte & SvelteKit)",
+    points: [
+      "Learned to solve real world problems with code",
+      "Learned to collaborate with team"
+    ],
+  },
 ];
 

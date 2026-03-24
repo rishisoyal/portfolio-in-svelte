@@ -43,4 +43,12 @@ export const skills = [
     name: "Git",
     level: 50,
   },
+  {
+    name: "Svelte and SvelteKit",
+    level: 50
+  },
+  {
+    name: "Hono",
+    level: 70
+  },
 ];

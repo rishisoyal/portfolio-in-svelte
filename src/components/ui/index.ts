@@ -6,4 +6,5 @@ export { default as Toast } from "./Toast.svelte";
 export { default as CustomCursorToggleButton } from "./CustomCursorToggleButton.svelte";
 export { default as AnimatedHeading } from "./AnimatedHeading.svelte";
 export { default as AnimatedButton } from "./AnimatedButton.svelte";
+export { default as About } from "../about/About.svelte";
 
