@@ -1,60 +1,62 @@
 <script lang="ts">
-	import { customCursor, toggleCursor } from '../../store';
+	import { fade } from 'svelte/transition';
+	import { customCursor } from '../../store';
+
 	let mouseX = $state(0);
 	let mouseY = $state(0);
 	let scale = $state(1);
+	// Internal state to handle the 'ghost' cursor
+	let isInside = $state(false);
 
-	$effect(() => {
-		const move = (e: MouseEvent) => {
-			mouseX = e.clientX;
-			mouseY = e.clientY;
-			if (!$customCursor) toggleCursor();
-		};
+	const move = (e: MouseEvent) => {
+		// If it was hidden, show it as soon as it moves
+		if (!isInside) isInside = true;
 
-		const handleDown = () => {
+		mouseX = e.clientX;
+		mouseY = e.clientY;
+	};
+
+	const handleOver = (e: MouseEvent) => {
+		const target = e.target as HTMLElement;
+		if (target.closest?.('button, a, input, textarea, [data-cursor-scale], .project-card')) {
 			scale = 1.5;
-		};
-		const handleUp = () => {
+		} else {
 			scale = 1;
-		};
+		}
+	};
 
-		const handleOver = (e: MouseEvent) => {
-			const target = e.target as HTMLElement;
-			if (target.closest?.('button, a, input, textarea, [data-cursor-scale], .project-card')) {
-				scale = 1.5;
-			}
-		};
-
-		const handleOut = () => {
-			scale = 1;
-		};
-
-		window.addEventListener('mousemove', move);
-		window.addEventListener('mousedown', handleDown);
-		window.addEventListener('mouseup', handleUp);
-		window.addEventListener('mouseover', handleOver);
-		window.addEventListener('mouseout', handleOut);
-
-		return () => {
-			window.removeEventListener('mousemove', move);
-			window.removeEventListener('mousedown', handleDown);
-			window.removeEventListener('mouseup', handleUp);
-			window.removeEventListener('mouseover', handleOver);
-			window.removeEventListener('mouseout', handleOut);
-		};
-	});
+	const exitViewport = () => {
+		isInside = false;
+		$customCursor = false;
+	};
 </script>
 
-{#if $customCursor}
-	<!-- Main Dot: Follows mouse exactly  -->
-	<div
-		class="pointer-events-none fixed inset-0 z-999 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#5160b2]"
-		style={`transform: translate(${mouseX}px, ${mouseY}px)`}
-	></div>
+<svelte:window
+	onmousemove={move}
+	onmousedown={() => (scale = 1.5)}
+	onmouseup={() => (scale = 1)}
+	onmouseover={handleOver}
+/>
 
-	<!-- Trail: Follows mouse with a lag  -->
+<svelte:document onmouseleave={exitViewport} onmouseenter={() => (isInside = true)} />
+
+{#if isInside}
 	<div
-		class="pointer-events-none fixed inset-0 z-999 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#5160b2ae] opacity-70 transition-transform duration-500 ease-out"
-		style={`transform: translate(${mouseX}px, ${mouseY}px) scale(${scale})`}
-	></div>
+		in:fade={{
+			duration: 400
+		}}
+		out:fade={{
+			duration: 400
+		}}
+	>
+		<div
+			class="pointer-events-none fixed top-0 left-0 z-999 h-2 w-2 rounded-full bg-[#5160b2]"
+			style:transform={`translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`}
+		></div>
+
+		<div
+			class="pointer-events-none fixed top-0 left-0 z-999 h-10 w-10 rounded-full bg-[#5160b2ae] opacity-70 transition-transform duration-500 ease-out"
+			style:transform={`translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%) scale(${scale})`}
+		></div>
+	</div>
 {/if}
