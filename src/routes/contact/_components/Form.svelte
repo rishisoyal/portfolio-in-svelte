@@ -20,17 +20,20 @@
 		const form = z.object({
 			name: z
 				.string()
-				.max(20, 'Name can not be more than 20 characters')
-				.nonempty('Name is required'),
-			email: z.email('Invalid email').nonempty('Email is required'),
+				.trim()
+				.nonempty('Name is required')
+				.max(20, 'Name can not be more than 20 characters'),
+			email: z.email('Invalid email').trim().nonempty('Email is required'),
 			subject: z
 				.string()
-				.max(100, 'Subject can not be more than 100 characters')
-				.nonempty('Subject is required'),
+				.trim()
+				.nonempty('Subject is required')
+				.max(100, 'Subject can not be more than 100 characters'),
 			message: z
 				.string()
-				.max(500, 'Message can not be more than 500 characters')
-				.nonempty('Message is required'),
+				.trim()
+				.nonempty('Message is required')
+				.max(500, 'Message can not be more than 500 characters'),
 			company: z.string().or(z.null())
 		});
 
