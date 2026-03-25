@@ -267,6 +267,20 @@ html.dark {
 	}
 }
 
+.animation-slide-in-right {
+	animation: slide-in-right 1s ease-out 0s 1;
+}
+
+@keyframes slide-in-right {
+	from {
+		transform: translateX(60px);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
 /* used only in tooltip animation */
 .animation-fade-in-down {
 	animation: fade-in-down 0.5s ease-out 0s 1;

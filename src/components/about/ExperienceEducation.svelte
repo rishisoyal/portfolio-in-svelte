@@ -11,7 +11,7 @@
 					}
 				}
 			},
-			{ threshold: 1 }
+			{ threshold: .7 }
 		);
 
 		const elements = document.querySelectorAll('.experience-education');
