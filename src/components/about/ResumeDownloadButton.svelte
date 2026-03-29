@@ -4,9 +4,9 @@
 
 <a
 	bind:this={linkRef}
-	href="/Rishi Soyal - Resume.pdf"
+	href="/Rishi_Soyal-Resume.pdf"
 	target="_blank"
-	download={true}
+	download
 	class="hidden"
 	aria-label="hidden"
 ></a>

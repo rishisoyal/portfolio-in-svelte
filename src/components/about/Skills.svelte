@@ -12,7 +12,7 @@
 					}
 				}
 			},
-			{ threshold: .7 }
+			{ threshold: 0.7 }
 		);
 
 		const elements = document.querySelectorAll('.skill');

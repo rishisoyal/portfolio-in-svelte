@@ -194,14 +194,14 @@ html.dark {
 
 /* shutter animation */
 #shutter {
-		animation: slide-up 0.7s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 forwards;
-	}
+	animation: slide-up 0.7s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 forwards;
+}
 
-	@keyframes slide-up {
-		to {
-			transform: translateY(100%);
-		}
+@keyframes slide-up {
+	to {
+		transform: translateY(100%);
 	}
+}
 
 .animation-fade-in-left {
 	animation: fade-in-left 1s ease-out 0s 1;
@@ -304,7 +304,7 @@ html.dark {
 
 @keyframes zoom-in {
 	from {
-		transform: scale(0.5);
+		transform: scale(0.7);
 	}
 
 	to {

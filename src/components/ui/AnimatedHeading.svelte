@@ -13,7 +13,7 @@
 	>
 		{backText}
 	</div>
-	<h1 class="flex h-full w-full items-center justify-center text-4xl font-bold sm:text-6xl z-1">
+	<h1 class="z-1 flex h-full w-full items-center justify-center text-4xl font-bold sm:text-6xl">
 		{frontText.firstText}
 		<span class="px-4 text-[#5160b2] text-shadow-[0px_0px_50px_#7287fd]">
 			{frontText.secondText}

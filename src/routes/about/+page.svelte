@@ -4,4 +4,4 @@
 
 <title>Rishi Soyal - About</title>
 
-<About/>
+<About />
