@@ -93,7 +93,7 @@
 		</div>
 	</div>
 
-	<div class="h-92.5 w-180">
+	<div>
 		<img
 			class="w-full rounded-2xl border border-[#45475a]"
 			src={project.img!}
