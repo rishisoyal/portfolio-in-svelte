@@ -27,7 +27,18 @@
 		// set theme
 		if ((!theme && !$isDark) || (theme === 'light' && $isDark)) toggleTheme();
 	});
+
+	const getPageName = () => {
+		if (page.route.id === '/') return 'Home';
+
+		const firstLetter = page.route.id?.charAt(1);
+		return `${firstLetter?.toUpperCase()}${page.route.id?.slice(2)}`;
+	};
 </script>
+
+<svelte:head>
+	<title>Rishi Soyal - {getPageName()}</title>
+</svelte:head>
 
 <Header />
 <Toast />

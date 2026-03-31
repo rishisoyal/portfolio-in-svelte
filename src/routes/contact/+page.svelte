@@ -3,8 +3,6 @@
 	import { Form, Socials } from './_components';
 </script>
 
-<title>Rishi Soyal - Contact</title>
-
 <main class="mb-18 flex items-start justify-center pt-12 lg:mb-0">
 	<section class="flex w-full flex-col justify-center gap-8 p-3 sm:p-8">
 		<AnimatedHeading frontText={{ firstText: 'GET IN', secondText: 'TOUCH' }} backText="CONTACT" />

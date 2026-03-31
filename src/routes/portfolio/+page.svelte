@@ -3,8 +3,6 @@
 	import Projects from './_components/Projects.svelte';
 </script>
 
-<title>Rishi Soyal - Portfolio</title>
-
 <main class="mb-14 w-full pt-12 lg:mb-0">
 	<section class="flex w-full flex-col justify-center gap-8 p-8">
 		<AnimatedHeading frontText={{ firstText: 'MY', secondText: 'PORTFOLIO' }} backText="WORKS" />

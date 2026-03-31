@@ -5,8 +5,6 @@
 	let open = $state(false);
 </script>
 
-<title>Rishi Soyal - Home</title>
-
 <main
 	class="width-transition relative mb-14 flex min-h-screen w-full items-center justify-center overflow-hidden lg:mb-0"
 >
