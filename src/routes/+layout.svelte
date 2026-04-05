@@ -38,6 +38,7 @@
 
 <svelte:head>
 	<title>Rishi Soyal - {getPageName()}</title>
+	<link rel="preload" href="/home_1.avif" as="image" type="image/avif"/>
 </svelte:head>
 
 <Header />
