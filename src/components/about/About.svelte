@@ -92,7 +92,7 @@
 									>
 										Address:
 									</span>
-									<span class="">357, Laxmi Narayan Puri, Jaipur</span>
+									<span class="">Jaipur, Rajasthan, India</span>
 								</div>
 								<div
 									class="flex flex-col
@@ -174,8 +174,8 @@
 					<div
 						class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
 					>
-						<span class="stat-text text-md">INTERNSHIP EXPERIENCE</span>
-						<span class="text-2xl font-bold text-[#5160b2]"> 3 MONTHS </span>
+						<span class="stat-text text-md">INDUSTRIAL TRAINING EXPERIENCE</span>
+						<span class="text-2xl font-bold text-[#5160b2]"> 5 MONTHS </span>
 					</div>
 					<div
 						class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"

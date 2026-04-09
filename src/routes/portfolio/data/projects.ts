@@ -33,10 +33,15 @@ export const projects: Array<Project> = [
     ],
   },
   {
-    name: "Product Management System",
-    desc: "A simple python TUI to manage and track customers and products",
-    img: "/weather_app-browser-mockup.avif",
-    github: "https://github.com/rishisoyal/Product-Management-System",
-    techStack: ["Python", "Pandas Library"],
+    name: "Web Music Player",
+    desc: "A web based music player built completely from scratch in HTML5, CSS3 and JacaScript",
+    img: "/music_player.avif",
+    public_url: "https://music-player-rishisoyal.vercel.app/",
+    github: "https://github.com/rishisoyal/Music-Player",
+    techStack: [
+     "HTML5",
+     "CSS3",
+     "Javascript"
+    ],
   },
 ];

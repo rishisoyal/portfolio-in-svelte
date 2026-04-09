@@ -29,12 +29,10 @@ export const experienceAndEducation = [
   },
   {
     duration: "2025(October) - 2026(March)",
-    title: "Internship - Full-Stack Web Development",
-    description: "Completed internship at Laxmaya Technologies in full-stack web development(MERN, NextJS, Svelte & SvelteKit)",
+    title: "Trainee - Full-Stack Web Development",
+    description: "Completed industrial training at Laxmaya Technologies in full-stack web development(MERN, NextJS, Svelte & SvelteKit)",
     points: [
-      "Learned to solve real world problems with code",
-      "Learned to collaborate with team"
+      "Recognized for technical proficiency in building full-stack applications and addressing business issues through efficient coding practices."
     ],
   },
 ];
-
