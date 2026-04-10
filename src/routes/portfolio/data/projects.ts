@@ -34,7 +34,7 @@ export const projects: Array<Project> = [
   },
   {
     name: "Web Music Player",
-    desc: "A web based music player built completely from scratch in HTML5, CSS3 and JacaScript",
+    desc: "A web based music player built completely from scratch in HTML5, CSS3 and JavaScript",
     img: "/music_player.avif",
     public_url: "https://music-player-rishisoyal.vercel.app/",
     github: "https://github.com/rishisoyal/Music-Player",
