@@ -98,7 +98,7 @@
 					name="name"
 					id="name"
 					placeholder="YOUR NAME"
-					class={`transition-border w-full rounded-full border-2 bg-gray-300 p-3 px-6 text-[14px] text-black duration-200 outline-none focus:border-[#5160b2] sm:py-4 sm:text-[16px] dark:bg-[#313244] dark:text-white ${formError.name === '' ? 'border-[#d20f3982]' : 'border-transparent'} cursor-input hover:scale-105 focus:scale-105 custom-cursor:cursor-none`}
+					class={`transition-border w-full rounded-full border-2 bg-gray-300 p-3 px-6 text-[12px] text-black duration-200 outline-none focus:border-[#5160b2] sm:py-4 sm:text-[14px] dark:bg-[#313244] dark:text-white ${formError.name === '' ? 'border-[#d20f3982]' : 'border-transparent'} cursor-input hover:scale-102 focus:scale-102 custom-cursor:cursor-none`}
 				/>
 			</ToolTipWrapper>
 
@@ -109,7 +109,7 @@
 					name="email"
 					id="email"
 					placeholder="YOUR EMAIL"
-					class={`transition-border w-full rounded-full border-2 bg-gray-300 p-3 px-6 text-[14px] text-black duration-200 outline-none focus:border-[#5160b2] sm:py-4 sm:text-[16px] dark:bg-[#313244] dark:text-white ${formError.email === '' ? 'border-[#d20f3982]' : 'border-transparent'} cursor-input hover:scale-105 focus:scale-105 custom-cursor:cursor-none`}
+					class={`transition-border w-full rounded-full border-2 bg-gray-300 p-3 px-6 text-[12px] text-black duration-200 outline-none focus:border-[#5160b2] sm:py-4 sm:text-[14px] dark:bg-[#313244] dark:text-white ${formError.email === '' ? 'border-[#d20f3982]' : 'border-transparent'} cursor-input hover:scale-102 focus:scale-102 custom-cursor:cursor-none`}
 				/>
 			</ToolTipWrapper>
 		</div>
@@ -121,7 +121,7 @@
 					name="subject"
 					id="subject"
 					placeholder="YOUR SUBJECT"
-					class={`transition-border w-full rounded-full border-2 bg-gray-300 p-3 px-6 text-[14px] text-black duration-200 outline-none focus:border-[#5160b2] sm:py-4 sm:text-[16px] dark:bg-[#313244] dark:text-white ${formError.subject === '' ? 'border-[#d20f3982]' : 'border-transparent'} cursor-input hover:scale-105 focus:scale-105 custom-cursor:cursor-none`}
+					class={`transition-border w-full rounded-full border-2 bg-gray-300 p-3 px-6 text-[12px] text-black duration-200 outline-none focus:border-[#5160b2] sm:py-4 sm:text-[14px] dark:bg-[#313244] dark:text-white ${formError.subject === '' ? 'border-[#d20f3982]' : 'border-transparent'} cursor-input hover:scale-102 focus:scale-102 custom-cursor:cursor-none`}
 				/>
 			</ToolTipWrapper>
 		</div>
@@ -132,7 +132,7 @@
 					name="message"
 					id="message"
 					placeholder="YOUR MESSAGE"
-					class={`transition-border min-h-40 w-full rounded-4xl border-2 bg-gray-300 p-3 px-6 text-[14px] text-black duration-200 outline-none focus:border-[#5160b2] sm:py-4 sm:text-[16px] dark:bg-[#313244] dark:text-white ${formError.message === '' ? 'border-[#d20f3982]' : 'border-transparent'} cursor-input hover:scale-105 focus:scale-105 custom-cursor:cursor-none`}
+					class={`transition-border min-h-40 w-full rounded-4xl border-2 bg-gray-300 p-3 px-6 text-[12px] text-black duration-200 outline-none focus:border-[#5160b2] sm:py-4 sm:text-[14px] dark:bg-[#313244] dark:text-white ${formError.message === '' ? 'border-[#d20f3982]' : 'border-transparent'} cursor-input hover:scale-102 focus:scale-102 custom-cursor:cursor-none`}
 					rows={6}
 					maxLength={500}
 				></textarea>

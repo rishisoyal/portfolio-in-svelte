@@ -9,7 +9,7 @@
 		<div class="animation-slide-in-up w-full p-1 lg:p-12">
 			<div class="flex w-full flex-col items-start justify-center gap-14 lg:flex-row">
 				<!-- Left section -->
-				<div class="left flex w-full flex-col gap-8 lg:w-100 xl:w-160">
+				<div class="left flex w-full flex-col gap-8 lg:w-180">
 					<!-- Main text  -->
 					<div class="flex flex-col gap-2">
 						<div class="flex w-full items-center justify-start py-2 text-3xl font-bold">
@@ -24,7 +24,7 @@
 					<div class="flex flex-col items-start justify-center gap-4">
 						<div class="flex items-center justify-center gap-2">
 							<div class="">
-								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
 									><path
 										fill="currentColor"
 										d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203.21l-4.243 4.242a3 3 0 0 1-4.097.135l-.144-.135l-4.244-4.243A9 9 0 0 1 18.364 4.636M12 8a3 3 0 1 0 0 6a3 3 0 0 0 0-6"
@@ -38,7 +38,7 @@
 						</div>
 						<div class="flex items-center justify-center gap-2">
 							<div class="">
-								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"
 									><path
 										fill="currentColor"
 										d="M448.67 154.45L274.1 68.2a41.1 41.1 0 0 0-36.2 0L63.33 154.45A55.6 55.6 0 0 0 32 204.53v184.61c0 30.88 25.42 56 56.67 56h334.66c31.25 0 56.67-25.12 56.67-56V204.53a55.6 55.6 0 0 0-31.33-50.08M252.38 96.82a8.22 8.22 0 0 1 7.24 0L429 180.48l-172 85a8.22 8.22 0 0 1-7.24 0L80.35 181.81Z"
@@ -57,7 +57,7 @@
 						</div>
 						<div class="flex items-center justify-center gap-2">
 							<div class="">
-								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 15"
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15 15"
 									><path
 										fill="currentColor"
 										d="M2.5 0A2.5 2.5 0 0 0 0 2.5v2C0 10.299 4.701 15 10.5 15h2a2.5 2.5 0 0 0 2.5-2.5v-1.382a1.5 1.5 0 0 0-.83-1.342l-2.415-1.208a1.5 1.5 0 0 0-2.094.868l-.298.893a.71.71 0 0 1-.812.471A5.55 5.55 0 0 1 4.2 6.45a.71.71 0 0 1 .471-.812l1.109-.37a1.5 1.5 0 0 0 .98-1.787l-.586-2.344A1.5 1.5 0 0 0 4.72 0z"

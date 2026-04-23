@@ -15,7 +15,7 @@
 			class="relative flex w-full flex-col items-center justify-start gap-8 p-3 sm:p-8 sm:py-28"
 		>
 			<div
-				class="flex w-full flex-col items-start justify-center gap-2 p-3 min-[1600px]:w-360 lg:flex-row"
+				class="flex w-full flex-col items-start justify-center gap-2 p-3 min-[1200px]:w-360 lg:flex-row"
 			>
 				<div class="flex h-full w-full flex-col gap-4 lg:w-1/2">
 					<h2 class="w-full py-2 text-start text-2xl text-[#5160b2]">PERSONAL INFO</h2>
@@ -25,7 +25,7 @@
 								<div
 									class="flex flex-col
                     min-[720px]:max-[1020px]:flex-row
-                    min-[1400px]:flex-row sm:gap-1"
+                    min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]"
@@ -37,7 +37,7 @@
 								<div
 									class="flex flex-col
                   min-[720px]:max-[1020px]:flex-row
-                  min-[1400px]:flex-row sm:gap-1"
+                  min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]"
@@ -49,7 +49,7 @@
 								<div
 									class="flex flex-col
                   min-[720px]:max-[1020px]:flex-row
-                  min-[1400px]:flex-row sm:gap-1"
+                  min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]"
@@ -61,7 +61,7 @@
 								<div
 									class="flex flex-col
                   min-[720px]:max-[1020px]:flex-row
-                  min-[1400px]:flex-row sm:gap-1"
+                  min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]"
@@ -73,7 +73,7 @@
 								<div
 									class="flex flex-col
                   min-[720px]:max-[1020px]:flex-row
-                  min-[1400px]:flex-row sm:gap-1"
+                  min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]"
@@ -85,7 +85,7 @@
 								<div
 									class="flex flex-col
                   min-[720px]:max-[1020px]:flex-row
-                  min-[1400px]:flex-row sm:gap-1"
+                  min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]"
@@ -97,7 +97,7 @@
 								<div
 									class="flex flex-col
                   min-[720px]:max-[1020px]:flex-row
-                  min-[1400px]:flex-row sm:gap-1"
+                  min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]"
@@ -111,7 +111,7 @@
 								<div
 									class="flex flex-col
                   flex-wrap
-                  min-[720px]:max-[1020px]:flex-row min-[1400px]:flex-row sm:gap-1"
+                  min-[720px]:max-[1020px]:flex-row min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_10px_#7287fd] dark:text-[#cdd6f4]"
@@ -128,7 +128,7 @@
 								<div
 									class="flex flex-col
                   min-[720px]:max-[1020px]:flex-row
-                  min-[1400px]:flex-row sm:gap-1"
+                  min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_20px_#7287fd] dark:text-[#cdd6f4]"
@@ -146,7 +146,7 @@
 								<div
 									class="flex flex-col
                   min-[720px]:max-[1020px]:flex-row
-                  min-[1400px]:flex-row sm:gap-1"
+                  min-[1200px]:flex-row sm:gap-1"
 								>
 									<span
 										class="text-[#5160b2] text-shadow-[0px_0px_20px_#7287fd] dark:text-[#cdd6f4]"

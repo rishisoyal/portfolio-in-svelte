@@ -17,7 +17,7 @@
 	>
 		<div
 			id="hero-img"
-			class="relative z-9 h-60 w-60 rounded-[10px] sm:h-80 sm:w-80 lg:mt-4 lg:h-[calc(100vh-100px)] lg:min-w-[35vw] lg:rounded-2xl lg:border-0"
+			class="relative z-9 h-60 w-60 rounded-[10px] sm:h-80 sm:w-80 lg:h-[calc(100vh-50px)] lg:min-w-[36vw] lg:rounded-2xl lg:border-0"
 		>
 			<img src="/home_1.avif" alt="Rishi Soyal" class="h-full w-full rounded-[10px] object-cover" />
 		</div>
@@ -35,7 +35,7 @@
 				</div>
 				<div class="w-screen p-4 pt-0 md:w-180 lg:w-130">
 					<p
-						class="w-full text-center leading-7 text-wrap text-[#232634] sm:text-[18px] sm:leading-8 lg:w-150 lg:text-left dark:text-[#cdd6f4]"
+						class="w-full text-center leading-7 text-wrap text-[#232634] sm:text-[16px] sm:leading-8 lg:w-150 lg:text-left dark:text-[#cdd6f4]"
 					>
 						I&apos;m an India based full-stack web developer focused on crafting clean &
 						user-friendly experiences, I am passionate about building excellent software that

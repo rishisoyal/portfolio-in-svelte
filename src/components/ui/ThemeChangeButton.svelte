@@ -10,7 +10,7 @@
 		title={$isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
 	>
 		{#if $isDark}
-			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
 				><g fill="none"
 					><g fill="currentColor" clip-path="url(#SVGHcSWxdhd)"
 						><path
@@ -21,7 +21,7 @@
 				></svg
 			>
 		{:else}
-			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20"
 				><path
 					fill="currentColor"
 					fill-rule="evenodd"

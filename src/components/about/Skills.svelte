@@ -34,7 +34,7 @@
 				<CircularProgressbar level={skill.level} />
 			</div>
 			<div class="flex w-full items-center justify-center p-2 sm:p-4">
-				<h2 class="text-[18px] text-nowrap sm:text-xl">{skill.name}</h2>
+				<h2 class="text-[14px] text-nowrap sm:text-xl">{skill.name}</h2>
 			</div>
 		</div>
 	{/each}

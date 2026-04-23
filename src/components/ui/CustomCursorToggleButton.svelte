@@ -10,7 +10,7 @@
 		title={$customCursor ? 'Disable Custom Cursor' : 'Enable Custom Cursor'}
 	>
 		{#if $customCursor}
-			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
 				><path
 					fill="none"
 					stroke="currentColor"
@@ -21,7 +21,7 @@
 				/></svg
 			>
 		{:else}
-			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
 				><g
 					fill="none"
 					stroke="currentColor"

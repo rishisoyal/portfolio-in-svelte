@@ -73,6 +73,7 @@ html {
 	color: black !important;
 	background-color: #dce0e8 !important;
 	transition: all 0.3s;
+	font-size: 13px;
 }
 
 html.dark {
