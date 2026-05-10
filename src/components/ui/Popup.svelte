@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { blur, scale } from 'svelte/transition';
+	import { blur, fly } from 'svelte/transition';
 
 	interface PopupProps {
 		isOpen: boolean;
@@ -29,11 +29,8 @@
 		<div
 			class="max-h-[90vh] w-full max-w-max overflow-y-auto rounded-2xl border-2 border-[#45475a] bg-[#DCE0E8] p-4 sm:p-6 dark:bg-[#11111b]"
 			onclick={(e) => e.stopPropagation()}
-			in:scale={{
-				opacity: 0,
-				start: 0.9
-			}}
-			out:scale={{ opacity: 0, start: 0.9 }}
+			in:fly={{ y: 20, opacity: 0.5, duration: 300 }}
+			out:fly={{ y: 20, opacity: 0, duration: 300 }}
 		>
 			<div class="flex w-full items-center justify-end">
 				<button

@@ -1,1 +1,1 @@
-export type { ContactForm } from "./contact.type";
+export type { ContactForm } from './contact.type';
