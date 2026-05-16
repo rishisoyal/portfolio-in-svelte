@@ -3,7 +3,6 @@
 	import ExperienceEducation from './ExperienceEducation.svelte';
 	import ResumeDownloadButton from './ResumeDownloadButton.svelte';
 	import Skills from './Skills.svelte';
-	
 </script>
 
 <main class="mb-14 w-full max-w-480 overflow-hidden lg:mb-0">

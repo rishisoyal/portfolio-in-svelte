@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant custom-cursor (.custom-cursor &);
@@ -74,6 +75,7 @@ html {
 	background-color: #dce0e8 !important;
 	transition: all 0.3s;
 	font-size: 13px;
+	font-family: 'Space Grotesk';
 }
 
 html.dark {
@@ -237,7 +239,8 @@ html.dark {
 }
 
 .animation-fade-in-up {
-	animation: fade-in-up 0.5s ease-in-out 0s 1 forwards;
+	animation: fade-in-up 0.5s ease-in-out 1 forwards;
+	animation-delay: calc((sibling-index() - 1) * 50ms);
 }
 
 @keyframes fade-in-up {

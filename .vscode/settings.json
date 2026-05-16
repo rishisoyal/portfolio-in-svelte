@@ -1,5 +1,6 @@
 {
 	"files.associations": {
 		"*.css": "tailwindcss"
-	}
+	},
+	"typescript.native-preview.tsdk": "/home/rishi/Documents/portfolio-in-svelte/node_modules/@typescript/native-preview"
 }
