@@ -240,7 +240,7 @@ html.dark {
 
 .animation-fade-in-up {
 	animation: fade-in-up 0.5s ease-in-out 1 forwards;
-	animation-delay: calc((sibling-index() - 1) * 40ms);
+	animation-delay: calc((sibling-index() - 1) * 50ms);
 }
 
 @keyframes fade-in-up {
