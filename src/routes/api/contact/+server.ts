@@ -18,7 +18,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		const resend = new Resend(RESEND_API_KEY);
 
-		const { data, error } = await resend.emails.send({
+		const { error } = await resend.emails.send({
 			from: 'Portfolio <onboarding@resend.dev>',
 			to: [TO_EMAIL],
 			subject: subject || 'New Contact Message',
@@ -27,11 +27,13 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 
 		if (error) {
+			console.error(error.message);
 			return json({ error: error.message }, { status: 400 });
 		}
 
 		return json({ success: true });
 	} catch (err) {
+		console.error((err as Error).message);
 		return json({ error: 'Internal server error' }, { status: 500 });
 	}
 };

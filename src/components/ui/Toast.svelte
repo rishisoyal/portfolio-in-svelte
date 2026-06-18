@@ -23,8 +23,8 @@
 			}}
 		>
 			<div
-				class="toast-bar absolute inset-0 h-0.5 rounded-2xl bg-[#5160b2] brightness-110"
-				style="--duration: {$toast.duration}ms"
+				class="toast-bar absolute inset-0 h-0.5 rounded-2xl brightness-110"
+				style="--duration: {$toast.duration}ms; background-color: {severityColor[$toast.severity].borderColor};"
 			></div>
 			<div class="flex h-full w-full items-center justify-between">
 				{$toast.message}
