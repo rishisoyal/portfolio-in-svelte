@@ -36,7 +36,7 @@
 				<button
 					onclick={onClose}
 					class="cursor-pointer opacity-70 transition-all duration-200 hover:opacity-100 custom-cursor:cursor-none"
-					title="Close Card"
+					title="Close"
 				>
 					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
 						><g fill="currentColor"
