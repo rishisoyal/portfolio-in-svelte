@@ -21,7 +21,7 @@ export const skills = [
 	},
 	{
 		name: 'NextJS',
-		level: 50
+		level: 75
 	},
 	{
 		name: 'TypeScript',
@@ -41,6 +41,10 @@ export const skills = [
 	},
 	{
 		name: 'Git',
+		level: 50
+	},
+	{
+		name: 'Linux',
 		level: 50
 	},
 	{
