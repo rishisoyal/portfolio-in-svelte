@@ -57,12 +57,12 @@
     }}
   >
     <div
-      class="pointer-events-none fixed top-0 left-0 z-999 h-2 w-2 rounded-full bg-[#5160b2]"
+      class="pointer-events-none will-change-transform fixed top-0 left-0 z-999 h-2 w-2 rounded-full bg-[#5160b2]"
       style:transform={`translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`}
     ></div>
 
     <div
-      class="pointer-events-none fixed top-0 left-0 z-999 h-10 w-10 rounded-full bg-[#5160b2ae] opacity-70 transition-transform duration-500 ease-out"
+      class="pointer-events-none will-change-transform fixed top-0 left-0 z-999 h-10 w-10 rounded-full bg-[#5160b2ae] opacity-70 transition-transform duration-500 ease-out"
       style:transform={`translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%) scale(${scale})`}
     ></div>
   </div>

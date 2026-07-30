@@ -60,7 +60,7 @@
 <!-- shutter -->
 {#key page.url.pathname}
   <div
-    class="fixed inset-0 z-99 min-h-screen w-full bg-[#ccd0da] dark:bg-[#1e1e2e]"
+    class="fixed will-change-transform inset-0 z-99 min-h-screen w-full bg-[#ccd0da] dark:bg-[#1e1e2e]"
     id="shutter"
   ></div>
 {/key}
