@@ -13,7 +13,7 @@
   };
 </script>
 
-{#if true || $toast.open}
+{#if $toast.open}
   <div class="animation-slide-in-right fixed right-0 z-999 w-full p-4 md:w-100">
     <div
       class="flex w-full items-center justify-end gap-4 overflow-hidden rounded-2xl border-2 p-2 backdrop-blur-xs"
@@ -21,6 +21,9 @@
             background-color: ${severityColor[$toast.severity].bgColor};
             border-color: ${severityColor[$toast.severity].borderColor};
 						`}
+      in:fade={{
+        duration: 400,
+      }}
       out:fade={{
         duration: 400,
       }}
