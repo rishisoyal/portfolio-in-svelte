@@ -26,7 +26,7 @@
       <!-- svelte-ignore a11y_no_static_element_interactions -->
       <div
         onclick={() => handleProjectClick(i)}
-        class="project-card animation-fade-in-left relative flex h-55 w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl border-2 border-[#45475a] bg-cover bg-center transition-all duration-300 ease-in-out custom-cursor:cursor-none"
+        class="project-card animation-fade-in-left relative flex h-55 w-full cursor-pointer items-center justify-center overflow-hidden rounded-4xl border-2 border-[#45475a] bg-cover bg-center transition-all duration-300 ease-in-out custom-cursor:cursor-none"
       >
         <img
           class="h-full w-full bg-cover"

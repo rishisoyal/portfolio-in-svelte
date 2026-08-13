@@ -16,7 +16,7 @@
   <!-- tooltip   -->
   {#if open}
     <div
-      class="animation-fade-in-down absolute -bottom-8 left-1/2 z-9 h-max w-max -translate-x-1/2 transform rounded bg-[#d20f3982] px-2 py-1 text-sm whitespace-nowrap dark:text-white"
+      class="animation-fade-in-down absolute -bottom-8 left-1/2 z-9 h-max w-max -translate-x-1/2 transform rounded-2xl bg-[#d20f3982] px-2 py-1 text-sm whitespace-nowrap dark:text-white"
     >
       {tooltip}
     </div>

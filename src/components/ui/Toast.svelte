@@ -13,10 +13,10 @@
   };
 </script>
 
-{#if $toast.open}
+{#if true || $toast.open}
   <div class="animation-slide-in-right fixed right-0 z-999 w-full p-4 md:w-100">
     <div
-      class="flex w-full items-center justify-end gap-4 overflow-hidden rounded-xl border-2 p-4 backdrop-blur-xs md:h-18"
+      class="flex w-full items-center justify-end gap-4 overflow-hidden rounded-2xl border-2 p-2 backdrop-blur-xs"
       style={`
             background-color: ${severityColor[$toast.severity].bgColor};
             border-color: ${severityColor[$toast.severity].borderColor};
@@ -31,26 +31,26 @@
           $toast.severity
         ].borderColor};"
       ></div>
-      <div class="flex h-full w-full items-center justify-between">
+      <div class="flex w-full items-start p-2">
         {$toast.message}
-        <div class="flex h-full items-start">
-          <button
-            onclick={hideToast}
-            class="cursor-pointer custom-cursor:cursor-none"
-            title="Dismiss"
+      </div>
+      <div class="flex h-[stretch] min-h-14 items-start">
+        <button
+          onclick={hideToast}
+          class="cursor-pointer custom-cursor:cursor-none"
+          title="Dismiss"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            ><path
+              fill="currentColor"
+              d="m17.705 7.705l-1.41-1.41L12 10.59L7.705 6.295l-1.41 1.41L10.59 12l-4.295 4.295l1.41 1.41L12 13.41l4.295 4.295l1.41-1.41L13.41 12z"
+            /></svg
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              ><path
-                fill="currentColor"
-                d="m17.705 7.705l-1.41-1.41L12 10.59L7.705 6.295l-1.41 1.41L10.59 12l-4.295 4.295l1.41 1.41L12 13.41l4.295 4.295l1.41-1.41L13.41 12z"
-              /></svg
-            >
-          </button>
-        </div>
+        </button>
       </div>
     </div>
   </div>

@@ -177,20 +177,20 @@
           class="grid min-h-full w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:w-max"
         >
           <div
-            class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
+            class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-4xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
           >
             <span class="stat-text full">ACTIVELY LEARNING SINCE</span>
             <span class="text-2xl font-bold text-[#5160b2]">2021</span>
           </div>
           <div
-            class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
+            class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-4xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
           >
             <span class="stat-text text-md">INDUSTRIAL TRAINING EXPERIENCE</span
             >
             <span class="text-2xl font-bold text-[#5160b2]"> 5 MONTHS </span>
           </div>
           <div
-            class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
+            class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-4xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
           >
             <span class="stat-text text-md">TECHNOLOGIES USED</span>
             <span>
@@ -202,7 +202,7 @@
             </span>
           </div>
           <div
-            class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
+            class="flex h-full w-full flex-col items-start justify-center gap-2 rounded-4xl border-2 border-[#45475a] p-6 duration-500 ease-in-out hover:-translate-1.5 hover:shadow-[8px_8px_0px_0px_#45475a] hover:transition-all lg:w-64 dark:hover:shadow-[8px_8px_0px_0px_#cdd6f4]"
           >
             <span class="stat-text text-md">CORE TECH STACK</span>
             <span class="text-2xl font-bold text-[#5160b2]">

@@ -27,7 +27,7 @@
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div
-			class="max-h-[90vh] w-full max-w-max overflow-y-auto rounded-2xl border-2 border-[#45475a] bg-[#DCE0E8] p-4 sm:p-6 dark:bg-[#11111b]"
+			class="max-h-[90vh] w-full max-w-max overflow-y-auto rounded-4xl border-2 border-[#45475a] bg-[#DCE0E8] p-4 sm:p-6 dark:bg-[#11111b]"
 			onclick={(e) => e.stopPropagation()}
 			in:fly={{ y: 20, opacity: 0.5, duration: 300 }}
 			out:fly={{ y: 20, opacity: 0, duration: 300 }}

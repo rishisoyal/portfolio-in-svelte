@@ -119,7 +119,7 @@
 
   <div>
     <img
-      class="w-full rounded-2xl border border-[#45475a]"
+      class="w-full rounded-4xl border border-[#45475a]"
       src={project.img!}
       alt={project.name!}
       width={720}
