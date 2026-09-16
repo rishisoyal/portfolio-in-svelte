@@ -3,6 +3,28 @@
   import ExperienceEducation from "./ExperienceEducation.svelte";
   import ResumeDownloadButton from "./ResumeDownloadButton.svelte";
   import Skills from "./Skills.svelte";
+
+  $effect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animation-fade-in-up");
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.7 },
+    );
+
+    const elements = document.querySelectorAll(".scroll-reveal");
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      observer.disconnect();
+    };
+  });
 </script>
 
 <main class="mb-14 w-full max-w-480 overflow-hidden lg:mb-0">

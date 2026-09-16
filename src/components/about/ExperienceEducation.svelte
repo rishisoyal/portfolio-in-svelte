@@ -1,27 +1,5 @@
 <script>
   import { experienceAndEducation } from "./data/experienceAndEducation";
-
-  $effect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animation-fade-in-up");
-            observer.unobserve(entry.target);
-          }
-        }
-      },
-      { threshold: 0.7 },
-    );
-
-    const elements = document.querySelectorAll(".experience-education");
-
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      observer.disconnect();
-    };
-  });
 </script>
 
 <div class="flex w-full items-center justify-center">
@@ -29,7 +7,7 @@
     class="width-transition grid w-full grid-cols-1 place-items-center gap-6 p-3 sm:p-8 lg:w-300 lg:grid-cols-2"
   >
     {#each experienceAndEducation as data (data.title)}
-      <div class="experience-education flex h-full w-full gap-4 p-4 opacity-0">
+      <div class="scroll-reveal flex h-full w-full gap-4 p-4 opacity-0">
         <div class="flex flex-col items-center justify-center">
           <span class="rounded-full bg-[#5160b2] p-2 text-gray-200">
             <svg

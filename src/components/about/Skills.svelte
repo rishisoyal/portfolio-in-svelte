@@ -1,28 +1,6 @@
 <script lang="ts">
   import { skills } from "./data/skills";
   import CircularProgressbar from "./CircularProgressbar.svelte";
-
-  $effect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animation-fade-in-up");
-            observer.unobserve(entry.target);
-          }
-        }
-      },
-      { threshold: 0.7 },
-    );
-
-    const elements = document.querySelectorAll(".skill");
-
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      observer.disconnect();
-    };
-  });
 </script>
 
 <div
@@ -30,7 +8,7 @@
 >
   {#each skills as skill (skill.name)}
     <div
-      class="skill flex w-full max-w-50 flex-col items-center justify-center opacity-0"
+      class="scroll-reveal flex w-full max-w-50 flex-col items-center justify-center opacity-0"
     >
       <div class="flex w-full items-center justify-center">
         <CircularProgressbar level={skill.level} />
