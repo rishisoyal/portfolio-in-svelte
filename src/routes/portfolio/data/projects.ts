@@ -10,6 +10,39 @@ export const projects: Array<Project> = [
 		techStack: ['NextJS', 'Vercel AI SDK', 'Zod', 'Typescript', 'Mistral AI']
 	},
 	{
+		name: 'IT solutions platform',
+		desc: 'Modern, responsive company website for a software development agency focused on advanced eCommerce and custom digital solutions. Features smooth animations, multi-section layout (Home, About, Industries, Services, Solutions, Contact), and a clean professional UI. Built with React (Vite) + Tailwind CSS and deployed on Vercel.',
+		img: '/CTL_browser_mockup.avif',
+		public_url: 'https://company-website-frontend-woad.vercel.app/',
+		github: 'https://github.com/rishisoyal/company-website-frontend',
+		techStack: ['ReactJS', 'TailwindCSS', 'Lenis Smooth Scroll', 'Motion', 'Animate.CSS']
+	},
+	{
+		name: 'Admin Dashboard of the Custom Tech Labs',
+		desc: 'Secure admin panel for the Custom Tech Labs company website. Features a clean, modern login interface and provides backend control for managing the public-facing site. Built as the administrative companion to the frontend marketing website, enabling content and operational management behind authentication.',
+		img: '/CTL_Dashboard.avif',
+		public_url: 'https://company-website-backend-admin.vercel.app/',
+		github: 'https://github.com/rishisoyal/company-website-backend-admin',
+		techStack: ['Next.JS', 'axios', 'mongoose', 'zustand', 'bcrypt', 'Lucide']
+	},
+	{
+		name: 'Backend API of CTL and Dashboard',
+		desc: 'RESTful backend API that powers both the public company website and the admin dashboard. Handles authentication, dynamic content management (text, cards, and media). Built with a clean modular architecture and designed to serve as the single source of truth for the entire Custom Tech Labs platform.',
+		img: '/ctl_api.avif',
+		public_url: 'https://api-custom-tech-labs.vercel.app',
+		github: 'https://github.com/rishisoyal/api.custom-tech-labs',
+		techStack: [
+			'Hono',
+			'TypeScript',
+			'MongoDB',
+			'Mongoose',
+			'JWT (jose)',
+			'bcrypt',
+			'Cloudinary',
+			'Vercel'
+		]
+	},
+	{
 		name: 'Weather App',
 		desc: 'A sleek, modern web application that displays current weather and 3-day forecast for any city using the WeatherAPI API. Users can also get local weather data automatically via IP address.',
 		img: '/weather_app-browser-mockup.avif',
