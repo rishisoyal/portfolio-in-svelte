@@ -20,7 +20,7 @@
             <div
               class="flex w-full items-center justify-start py-2 text-3xl font-bold"
             >
-              <h2>DON&#39;T BE SHY!</h2>
+              <h2>Let's Connect</h2>
             </div>
             <p
               class="text-left text-wrap text-shadow-[0px_0px_30px_#5160b2] dark:text-[#cdd6f4]"
