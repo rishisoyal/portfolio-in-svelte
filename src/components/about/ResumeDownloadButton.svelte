@@ -4,7 +4,7 @@
 
 <a
   bind:this={linkRef}
-  href="/Rishi_Soyal-CV.pdf"
+  href="/Rishi_Soyal_CV.pdf"
   target="_blank"
   download
   class="hidden"
