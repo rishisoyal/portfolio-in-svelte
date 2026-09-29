@@ -4,12 +4,12 @@
   const { project }: { project: Project } = $props();
 </script>
 
-<div class="h-max w-full md:w-160">
+<div class="h-max w-full sm:w-160">
   <div class="flex w-full items-center justify-center text-[150%] sm:text-4xl">
     <h2 class="text-[#5160b2]">{project.name}</h2>
   </div>
   <!-- Info section -->
-  <div class="ga-4 flex flex-col py-4 text-sm sm:text-[1rem]">
+  <div class="flex flex-col py-4 text-sm sm:text-[1rem]">
     <div class="flex flex-wrap">
       <div class="flex max-w-full items-center gap-2 p-2">
         <span
