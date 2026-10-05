@@ -27,7 +27,6 @@
       subject: z
         .string()
         .trim()
-        .nonempty("Subject is required")
         .max(100, "Subject can not be more than 100 characters"),
       message: z
         .string()
