@@ -3,55 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant custom-cursor (.custom-cursor &);
 
-/* @utility text-scrollbar {
-  @apply [scrollbar-width:1px] [&::-webkit-scrollbar]:1px;
-}
-
-@utility no-scrollbar {
-  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
-} */
-
-/* Custom scrollbar */
-/* Scrollbar size */
-::-webkit-scrollbar {
-	width: 6px;
-	height: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-	background: transparent;
-	border-radius: 10px;
-}
-
-/* Thumb (dark/default) */
-::-webkit-scrollbar-thumb {
-	background: #6c7086;
-	border-radius: 10px;
-}
-
-/* Dark mode thumb */
-html.dark ::-webkit-scrollbar-thumb {
-	background: rgb(53, 53, 53);
-}
-
-/* Hover */
-::-webkit-scrollbar-thumb:hover {
-	background: #677eff;
-}
-
-/* Dark mode hover */
-html.dark ::-webkit-scrollbar-thumb:hover {
-	background: #5160b2;
-}
-
-/* Corner */
-::-webkit-scrollbar-corner {
-	background: #181825;
-}
-
 * {
 	scroll-behavior: smooth;
+	scrollbar-width: none;
 }
 
 ::selection {
