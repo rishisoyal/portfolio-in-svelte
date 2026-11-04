@@ -157,7 +157,7 @@
         type="submit"
         class="primary-btn cursor-pointer rounded-full before:rounded-full md:hover:text-white custom-cursor:cursor-none"
       >
-        <span class="font-semibold">SEND MESSAGE</span>
+        <span class="primary-btn-text font-semibold">SEND MESSAGE</span>
         <span
           class={`absolute right-0 flex h-14 w-14 items-center justify-center rounded-full bg-[#5160b2] text-xl text-white ${loading && "animate-spin"}`}
         >
