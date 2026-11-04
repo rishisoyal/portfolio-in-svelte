@@ -29,7 +29,7 @@
         class="project-card animation-fade-in-left relative flex h-55 w-full cursor-pointer items-center justify-center overflow-hidden rounded-4xl border-2 border-[#45475a] bg-cover bg-center transition-all duration-300 ease-in-out custom-cursor:cursor-none"
       >
         <img
-          class="h-full w-full object-cover"
+          class="project-card-image h-full w-full object-cover"
           src={project.img!}
           alt={project.name!}
           width={520}
@@ -39,7 +39,7 @@
           class="absolute flex h-full w-full items-center justify-center bg-[#000000] opacity-50 transition-all duration-500 ease-in-out md:opacity-0 md:hover:opacity-50"
         ></span>
         <h2
-          class="pointer-events-none absolute px-2 text-center text-2xl font-semibold text-[#5160b2] brightness-200 transition-all duration-500 text-shadow-[0px_0px_30px_#5160b2] md:top-5 md:opacity-0"
+          class="project-card-text pointer-events-none absolute px-2 text-center text-2xl font-semibold text-[#5160b2] brightness-200 transition-all duration-500 text-shadow-[0px_0px_30px_#5160b2] md:top-5 md:opacity-0"
         >
           {project.name}
         </h2>
@@ -62,7 +62,7 @@
       transition: all 0.5s ease-in-out;
     }
 
-    .project-card:hover h2 {
+    .project-card:hover .project-card-text {
       /* position: relative; */
       opacity: 1;
       top: 38%;
@@ -74,11 +74,11 @@
       scale: 1.03;
     }
 
-    .project-card img {
+    .project-card .project-card-image {
       transition: all 0.5s ease-in-out;
     }
 
-    .project-card:hover img {
+    .project-card:hover .project-card-image {
       transform: scale(1.12);
     }
   }

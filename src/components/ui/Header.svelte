@@ -40,7 +40,7 @@
     ${pathName === page.path ? "bg-[#5160b2] text-white" : "bg-[#bcc0cc] dark:bg-[#45475A]"}`}
         >
           <h2
-            class="pointer-events-none text-white absolute right-[20%] -z-9 hidden h-full w-32 items-center justify-center rounded-l-full rounded-r-2xl bg-[#5160b2] font-bold opacity-0 lg:flex text-[14px]"
+            class="header-link-text pointer-events-none text-white absolute right-[20%] -z-9 hidden h-full w-32 items-center justify-center rounded-l-full rounded-r-2xl bg-[#5160b2] font-bold opacity-0 lg:flex text-[14px]"
           >
             {page.name}
           </h2>
@@ -53,7 +53,7 @@
 </header>
 
 <style>
-  .header-link h2 {
+  .header-link-text {
     height: 100%;
     margin: 0;
     text-align: center;
@@ -61,7 +61,7 @@
     transition: all 0.3s;
   }
 
-  .header-link:hover h2 {
+  .header-link:hover .header-link-text {
     opacity: 1;
     right: 25px;
     pointer-events: all;

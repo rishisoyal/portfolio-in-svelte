@@ -52,7 +52,7 @@ html.dark {
 	transition: all 0.5s;
 }
 
-.primary-btn span {
+.primary-btn-text {
 	margin-left: -40px;
 }
 
@@ -83,7 +83,7 @@ html.dark {
 	inherits: false;
 }
 
-#hero-img {
+.hero-image-contianer {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -93,19 +93,19 @@ html.dark {
 	border-radius: 30px;
 }
 
-#hero-img img {
+.hero-image {
 	border-radius: 30px;
 }
 
 @media (max-width: 1024px) {
-	#hero-img,
-	#hero-img img {
+	.hero-image-contianer,
+	.hero-image {
 		border-radius: 100%;
 	}
 }
 
-#hero-img::before,
-#hero-img::after {
+.hero-image::before,
+.hero-image::after {
 	content: '';
 	display: flex;
 	width: 100%;
@@ -119,7 +119,7 @@ html.dark {
 	filter: blur(10px);
 }
 
-#hero-img::after {
+.hero-image::after {
 	background: conic-gradient(
 		from calc(var(--angle) + 100deg),
 		transparent 70%,
@@ -128,7 +128,7 @@ html.dark {
 	);
 }
 
-#hero-img::before {
+.hero-image::before {
 	background: conic-gradient(
 		from calc(var(--angle) - 90deg),
 		transparent 70%,

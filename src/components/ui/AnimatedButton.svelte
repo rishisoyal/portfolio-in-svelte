@@ -12,7 +12,7 @@
   class="primary-btn cursor-pointer rounded-full before:rounded-full md:hover:text-white custom-cursor:cursor-none"
   onclick={onClick}
 >
-  <span class="font-semibold">{content}</span>
+  <span class="primary-btn-text font-semibold">{content}</span>
   <span
     class="absolute right-0 flex h-14 w-14 items-center justify-center rounded-full bg-[#5160b2] text-xl text-white"
   >

@@ -16,13 +16,12 @@
     class="animation-slide-in-up flex w-full flex-col items-center justify-between gap-6 p-8 lg:flex-row"
   >
     <div
-      id="hero-img"
-      class="relative z-9 h-60 w-60 rounded-[10px] sm:h-80 sm:w-80 lg:h-[calc(100vh-50px)] lg:min-w-[36vw] lg:rounded-2xl lg:border-0"
+      class="hero-image-container relative z-9 h-60 w-60 rounded-[10px] sm:h-80 sm:w-80 lg:h-[calc(100vh-50px)] lg:min-w-[36vw] lg:rounded-2xl lg:border-0"
     >
       <img
         src="/home_1.avif"
         alt="Rishi Soyal"
-        class="h-full w-full rounded-[10px] object-cover"
+        class="hero-image h-full w-full rounded-[10px] object-cover"
       />
     </div>
     <div
